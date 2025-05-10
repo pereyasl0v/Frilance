@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+	--font-jost-regular: Jost, "sans-serif";
+	--font-jost-bold: Jost-bold, "sans-serif";
+}
+@font-face {
+	font-family: Jost;
+	src: url("fonts/Jost/static/Jost-Regular.ttf");
+}
+
+@font-face {
+	font-family: Jost-bold;
+	src: url("fonts/Jost/static/Jost-Bold.ttf");
+}
+
+/* Кастомизация стрелок */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+	font-size: inherit;
+	color: black;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	height: 10px;
+}
+
+.ant-carousel .slick-dots li button {
+	opacity: 0.5;
+	background-color: black;
+}
+
+.ant-carousel .slick-dots li.slick-active::after {
+	opacity: 1;
+	background-color: black;
+}
